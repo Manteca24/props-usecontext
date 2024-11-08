@@ -1,9 +1,12 @@
-import './App.css';
+import React from 'react';
+import RoutesApp from './routes/RoutesApp';
+import { CalculatorProvider } from './context/CalculatorContext';
+import './App.css'
 
-function App() {
-  return (
-    <></>
-  );
-}
+const App = () => (
+  <CalculatorProvider>
+    <RoutesApp />
+  </CalculatorProvider>
+);
 
 export default App;
